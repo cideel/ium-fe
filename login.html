@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+
+    <style>
+      body {
+        --bs-body-bg: #e6e7e9;
+        --bs-border-color: #99b5d0;
+      }
+
+      .form-control {
+        background-color: #e0f4ff;
+      }
+
+      .btn-primary {
+        --bs-btn-color: #e6e7e9;
+        --bs-btn-bg: #131931;
+      }
+
+      .btn-secondary {
+        --bs-btn-color: #131931;
+        --bs-btn-bg: #e0f4ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 min-vh-100 p-0">
+          <img src="assets/img/img-auth.png" height="100%" alt="" />
+        </div>
+        <div class="col-4 min-vh-100">
+          <div class="row justify-align-center align-items-center h-100">
+            <div class="col">
+              <div class="mb-3">
+                <label class="form-label ps-2 fw-bold">Username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="username"
+                  placeholder="Username"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label ps-2 fw-bold">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="mb-3">
+                <div class="row text-center">
+                  <div class="col">
+                    <button class="btn btn-primary rounded-pill w-100 fw-bold">
+                      Log In
+                    </button>
+                  </div>
+                  <div class="col">
+                    <a
+                      href="register.html"
+                      class="btn btn-secondary rounded-pill w-100 fw-bold"
+                      >Register</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/fontawesome/js/all.min.js"></script>
+  </body>
+</html>

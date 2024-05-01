@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Pasien</title>
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+
+    <style>
+      .navbar {
+        background-color: #e0f4ff;
+      }
+
+      .form-control {
+        background-color: #e0f4ff;
+        border-color: #99b5d0;
+        border-width: 2px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .btn-secondary {
+        --bs-btn-color: #131931;
+        --bs-btn-bg: #e0f4ff;
+        --bs-btn-hover-color: #131931;
+        --bs-btn-hover-bg: #e0f4ff;
+        border-color: #5ab6ff;
+        font-size: 20px;
+        font-weight: 500;
+        
+      }
+
+      span {
+        color: #131931;
+      }
+    </style>
+  </head>
+  <body class="min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom border-5">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active px-5" aria-current="page" href="#">
+                <img src="assets/img/user.png" class="p-2" width="50" alt="" />
+                Dokter A
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid mt-2 px-5">
+      <div class="row mb-5">
+        <div class="col-auto">
+          <a href="detail-pasien.html" class="btn">
+            <i class="fas fa-arrow-left fa-2x"></i>
+          </a>
+        </div>
+        <div class="col">
+          <h4><i class="fas fa-folder-open fa-2x"></i> Tuk Dalang / 3 Bulan</h4>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-12">
+          <h3>PERTUMBUHAN</h3>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <h5>Berat Badan</h5>
+            </div>
+            <div class="col-5">
+              <input type="text" value="4" class="form-control" />
+            </div>
+            <div class="col-3">
+              <h5>Kg</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <h5>BB/TB</h5>
+            </div>
+            <div class="col-6">
+              <h5>: -</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <h5>Tinggi Badan</h5>
+            </div>
+            <div class="col-5">
+              <input type="text" value="40" class="form-control" />
+            </div>
+            <div class="col-3">
+              <h5>Cm</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <h5>IMT</h5>
+            </div>
+            <div class="col-6">
+              <h5>: -</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <h5>Lingkar Kepala</h5>
+            </div>
+            <div class="col-5">
+              <input type="text" value="35" class="form-control" />
+            </div>
+            <div class="col-3">
+              <h5>Cm</h5>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="col-12 mb-3">
+          <h3>PERKEMBANGAN</h3>
+        </div>
+        <div class="col-12 mb-2">
+          <h5><u>KUESIONER PRA SKIRING PERKEMBANGAN</u></h5>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Pada waktu bayi terlentang, apakah masing-masing lengan dan
+                tungkai bergerak dengan mudah? Jawaban TIDAK bila salah satu
+                atau kedua tungkai atau lengan bayi bergerak tak terarah/tak
+                terkendali
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-end">
+              <button class="btn btn-secondary w-100 text-start  text-center align-middle">Yes</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Pada waktu bayi terlentang apakah ia melihat dan menatap wajah
+                anda?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-end">
+              <button class="btn btn-secondary w-100 text-start text-center align-middle">Yes</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Apakah bayi dapat mengeluarkan suara-suara lain (ngoceh) selain
+                menangis?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-end">
+              <button class="btn btn-secondary w-100 text-start text-center align-middle">Yes</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Apakah bayi suka tertawa keras walau tidak digelitik atau
+                diraba-raba
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-end">
+              <button class="btn btn-secondary w-100 text-start text-center align-middle">Yes</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Ambil wool merah, letakkan di atas wajah di depan mata, gerakkan
+                wool dari samping kiri ke kanan kepala. Apakah dia dapat
+                mengikuti gerakan anda dengan menggerakkan kepalanya dari
+                kanan/kiri ke tengah?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-end">
+              <button class="btn btn-secondary w-100 text-start text-center align-middle">Yes</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Ambil wool merah, letakkan di atas wajah di depan mata, gerakkan
+                wool dari samping kiri ke kanan kepala. Apakah dia dapat
+                mengikuti gerakan anda dengan menggerakkan kepalanya dari satu
+                sisi hampir ke sisi yang lain?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-end">
+              <button class="btn btn-secondary w-100 text-start text-center align-middle">Yes</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-10">
+                  <span>
+                    Pada waktu bayi telungkup di alas yang datar, apakah ia
+                    dapat mengangkat kepalanya seperti gambar ini?
+                  </span>
+                </div>
+                <div class="col-2 text-center">
+                  <img src="assets/img/3bulan-1.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-end">
+              <button class="btn btn-secondary w-100 text-start text-center align-middle">Yes</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-10">
+                  <span>
+                    Pada waktu bayi telungkup di alas yang datar, apakah ia
+                    dapat mengangkat kepalanya sehingga membentuk sudut 45°
+                    seperti gambar ini?
+                  </span>
+                </div>
+                <div class="col-2 text-center">
+                  <img src="assets/img/3bulan-2.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-end">
+              <button class="btn btn-secondary w-100 text-start text-center align-middle">Yes</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-10">
+                  <span>
+                    Pada waktu bayi telungkup di alas yang datar, apakah ia
+                    dapat mengangkat kepalanya dengan tegak seperti pada gambar?
+                  </span>
+                </div>
+                <div class="col-2 text-center">
+                  <img src="assets/img/3bulan-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-end">
+              <button class="btn btn-secondary w-100 text-start text-center align-middle">No</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <button class="btn btn-secondary w-100 text-start">
+            Bayi tidak dapat mengangkat kepalanya secara tegak
+          </button>
+        </div>
+        <div class="col-12 mb-2">
+          <h5><u>Tes Daya Dengar</u></h5>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <h6>Kemampuan Ekspresif</h6>
+              <span>
+                Apakah bayi dapat mengatakan aaaaa, ooooo?<br />
+                Apakah bayi menatap wajah dan tampak mendengarkan anda, lalu
+                berbiara saat anda diam?<br />
+                Apakah anda dapat seolah olah berbicara dengan bayi anda?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-end">
+              <button class="btn btn-secondary w-100 text-start text-center align-middle">Yes</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <h6>Kemampuan Reseptif</h6>
+              <span>
+                Apakah bayi kaget bila mendengar suara (mengejapkan mata, napas
+                lebih cepat)?<br />
+                Apakah bayi kelihatan menoleh bila anda berbicara di sebelahnya?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-end">
+              <button class="btn btn-secondary w-100 text-start text-center align-middle">Yes</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <h6>Kemampuan Visual</h6>
+              <span>
+                Apakah bayi anda dapat tersenyum?<br />
+                Apakah Bayi anda kenal dengan anda, seperti tersenyum lebih
+                cepat pada anda dibandingakan orang lain?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-end">
+              <button class="btn btn-secondary w-100 text-start text-center align-middle">Yes</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-4 text-center">
+          <button class="btn btn-primary">Simpan</button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/fontawesome/js/all.min.js"></script>
+  </body>
+</html>

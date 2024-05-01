@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambah Pasien</title>
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+
+    <style>
+      .navbar {
+        background-color: #e0f4ff;
+      }
+
+      .form-control {
+        background-color: #e0f4ff;
+        border-color: #99b5d0;
+        border-width: 2px;
+      }
+
+      .btn-secondary {
+        --bs-btn-color: #5ab6ff;
+        --bs-btn-bg: #e0f4ff;
+        --bs-btn-hover-color: #5ab6ff;
+        --bs-btn-hover-bg: #e0f4ff;
+        border-color: #5ab6ff;
+      }
+    </style>
+  </head>
+  <body class="min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom border-5">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active px-5" aria-current="page" href="#">
+                <img src="assets/img/user.png" class="p-2" width="50" alt="" />
+                Dokter A
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid mt-2 px-5">
+      <div class="row mb-5 justify-content-between">
+        <div class="col">
+          <h4><i class="fas fa-folder fa-2x"></i> Pasien Baru</h4>
+        </div>
+      </div>
+      <div class="row mb-5 data-pasien">
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3 text-end">
+              <h5>Nama Pasien</h5>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3 text-end">
+              <h5>Jenis Kelamin</h5>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3 text-end">
+              <h5>Nama Ayah</h5>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3 text-end">
+              <h5>Nama Ibu</h5>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3 text-end">
+              <h5>Alamat</h5>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3 text-end">
+              <h5>Tanggal Lahir</h5>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col text-center">
+          <button class="btn btn-primary">Simpan</button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/fontawesome/js/all.min.js"></script>
+  </body>
+</html>

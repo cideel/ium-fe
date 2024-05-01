@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Pasien</title>
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+
+    <style>
+      .navbar {
+        background-color: #e0f4ff;
+      }
+
+      .form-control {
+        background-color: #e0f4ff;
+        border-color: #99b5d0;
+        border-width: 2px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .btn-secondary {
+        --bs-btn-color: #131931;
+        --bs-btn-bg: #e0f4ff;
+        --bs-btn-hover-color: #131931;
+        --bs-btn-hover-bg: #e0f4ff;
+        border-color: #5ab6ff;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      span {
+        color: #131931;
+      }
+    </style>
+  </head>
+  <body class="min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom border-5">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active px-5" aria-current="page" href="#">
+                <img src="assets/img/user.png" class="p-2" width="50" alt="" />
+                Dokter A
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid mt-2 px-5">
+      <div class="row mb-5">
+        <div class="col-auto">
+          <a href="detail-pasien.html" class="btn">
+            <i class="fas fa-arrow-left fa-2x"></i>
+          </a>
+        </div>
+        <div class="col">
+          <h4>
+            <i class="fas fa-folder-open fa-2x"></i> Tuk Dalang / 36 Bulan
+          </h4>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-12">
+          <h3>PERTUMBUHAN</h3>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <h5>Berat Badan</h5>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <h5>BB/TB</h5>
+            </div>
+            <div class="col-6">
+              <h5>: -</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <h5>Tinggi Badan</h5>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <h5>IMT</h5>
+            </div>
+            <div class="col-6">
+              <h5>: -</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <h5>Lingkar Kepala</h5>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="col-12 mb-3">
+          <h3>PERKEMBANGAN</h3>
+        </div>
+        <div class="col-12 mb-2">
+          <h5><u>KUESIONER PRA SKIRING PERKEMBANGAN</u></h5>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Beri kubus di depannya. Dapatkah anak meletakkan 4 buah kubus
+                satu persatu di atas kubus yang lain tanpa menjatuhkan kubus
+                itu?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-8">
+                  <span>
+                    Apakah anak dapat menyebut 2 diantara gambar- gambar ini
+                    tanpa bantuan? (Menyebut dengan suara binatang tidak
+                    dihitung)
+                  </span>
+                </div>
+                <div class="col-4 text-center">
+                  <img src="assets/img/36bulan-1.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Bila diberi pensil, apakah anak mencoret-coret kertas tanpa
+                bantuan/petuniuk?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45 ">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45 ">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-12">
+                  <span>
+                    Buat garis lurus ke bawah sepanjang sekurang- kurangnya 2.5
+                    cm. <br />
+                    Suruh anak menggambar garis lain di samping garis ini.
+                    <br />
+                    Jawab Ya bila ia menggambar garis seperti ini :
+                  </span>
+                </div>
+                <div class="col-2 text-center">
+                  <img src="assets/img/36bulan-2.png" alt="" />
+                </div>
+                <div class="col-12">
+                  <span>
+                    Jawab Tidak bila ia menggambar garis seperti ini :
+                  </span>
+                </div>
+                <div class="col-2 text-center">
+                  <img src="assets/img/36bulan-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Dapatkah anak menggunakan 2 kata berangkai [ada saat berbicara
+                sepert "minta minum", "mau tidur"?<br />
+                ("Terima kasih" dan "Dadag" tidak ikut dinilai)
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span> Dapatkah anak mengenakan sepatunya sendiri? </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Dapatkah anak menyauh sepeda roda tiga sejauh sedikitnya 3
+                meter?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Ikuti perintah ini dengan seksama. Jangan memberi isyarat dengan
+                telunjuk atau mata pada saat memberikan perintah berikut ini:
+                <br />
+                "Letakkan kertas ini di lantai". <br />
+                "Letakkan kertas ini di kursi". <br />
+                "Berikan kertas ini kepada ibu".
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Dapatkah anak melaksanakan ketiga perintah tadi?Letakkan
+                selembar kertas seukuran buku ini di lantai. Apakah anak dapat
+                melompati bagian lebar kertas dengan mengangkat kakinya secara
+                bersamaan tanpa didahului lari?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Beri bola tenis. Minta anak melemparkan kearah dada anda.
+                Dapatkah anak melempar bola lurus ke arah perut atau dada anda
+                dari jarak 1,5 meter?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <h5><u>Tes Daya Dengar</u></h5>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <h6>Kemampuan Ekspresif</h6>
+              <span>
+                Apakah anak dapat menyebutkan nama benda dan kegunaannya?
+                Cangkir untuk minum, bola untuk dilempar, pensil warna untuk
+                menggambar, sendok untuk makan? <br />
+                Apakah lebih dari tiga perempat orang mengerti apa yang
+                dibicarakan anak anda?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <h6>Kemampuan Reseptif</h6>
+              <span>
+                Apakah anak dapat menunjukkan minimal 2 nama benda di depannya,
+                sesuai fungsinya (misal untuk minum: cangkir; untuk dilempar:
+                bola; untuk makan: sendok; untuk menggambar: pensil warna)?
+                <br />
+                Apakah anak dapat mengerjakan perintah yang disertai kata depan?
+                (misal: sekarang kubus itu di bawah meja, tolong taruh di atas
+                meja)?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <h6>Kemampuan Visual</h6>
+              <span>
+                Apakah anak secara spontan memulai permainan dengan gerakan
+                tubuh? Seperti pok ame-ame atau cilukba? <br />
+                Apakah anak anda menunjuk dengan jari telunjuk bila ingin
+                sesuatu, bukan dengan cara memegang dengan semua jari?
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2 mt-3">
+          <h5><u>Tes Daya Lihat</u></h5>
+        </div>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-6 mb-4">
+              <div class="row align-items-center">
+                <div class="col-3">
+                  <h5>Mata Kanan</h5>
+                </div>
+                <div class="col-4">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </div>
+            <div class="col-6 mb-4">
+              <div class="row align-items-center">
+                <div class="col-3">
+                  <h5>Mata Kiri</h5>
+                </div>
+                <div class="col-4">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="col-12 mb-3">
+          <h3>MENTAL EMOSIONAL</h3>
+        </div>
+        <div class="col-12 mb-2">
+          <h5><u>Kuesioner Masalah Perilaku Emosional</u></h5>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Apakah anda sering bereaksi negatif, marah, atau tegang tanpa
+                sebab yang jelas? <br />
+                (bereaksi negatif contohnya rewel, tidak sabran, banyak
+                menangis, mudah tersinggung atau bereaksi berlebiha bila merasa
+                situasi tidak seperti yang siharapkannya atau kemauannya tidak
+                terpenuhi)
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Apakah anak anda tampak lebih memilih untuk menyendiri atau
+                bermain sendiri, atau menghindar dari anak seumurnya atau orang
+                dewasa? <br />
+                (ingin sendirian, menyendiri dengan ekspresi murung, tidak
+                bersemangat, sedih, atau kehilangan minat terhadap hal-hal yang
+                biasa dinikmati)
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Apakah anak anda cenderung bersikap menentang? <br />
+                (membantah, melawan, tidak mau menurut atau melakukan hal yang
+                sebaiknya dari apa yang diminta, serta tampak tidak peduli
+                ketika diberitahu atau ditegur)
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <span>
+                Apakah anak anda mudah takut atau cemas berlebihan tanpa sebab
+                yang jelas ? <br />
+                (misal takut pada binatang auatu benda yang tidak berbahaya,
+                terlihat cemas ketika tidak melihat ibu/pengasuhnya)
+              </span>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-start">
+              <button class="btn btn-secondary w-45">
+                Yes
+              </button>
+              <button class="btn btn-secondary w-45">
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-4 text-center">
+          <button class="btn btn-primary">Simpan</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      var buttons = document.querySelectorAll('.btn-secondary');
+    
+
+      buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          var siblingButtons = this.parentNode.querySelectorAll('.btn-secondary');
+          siblingButtons.forEach(function(siblingButton) {
+            siblingButton.style.backgroundColor = ''; 
+            siblingButton.style.color = ''; 
+          });
+    
+          this.style.backgroundColor = '#D8AE7E'; 
+          this.style.color = '#000'; 
+        });
+      });
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/fontawesome/js/all.min.js"></script>
+  </body>
+</html>
